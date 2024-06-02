@@ -6,15 +6,15 @@ import "./main.css";
 
 const Main = () => {
   return (
-    <div className="layout">
-      <Sidebar />
-      <div className="headdd">
-        <Header />
-        <main>
-          <Outlet />
-        </main>
+      <div className="layout">
+          <Sidebar />
+          <div className="headdd">
+              <Header />
+              <main className="main">
+                  <Outlet />
+              </main>
+          </div>
       </div>
-    </div>
   );
 };
 

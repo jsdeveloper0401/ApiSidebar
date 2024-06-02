@@ -21,7 +21,6 @@ const Cars = () => {
             color: "Black",
             price: "$18000",
             year: "2023-03-02",
-            img:{img1}
         },
     ]);
     const [modal, setModal] = useState(false);
@@ -90,7 +89,7 @@ const Cars = () => {
                         <tbody>
                             {filteredCars.map(
                                 (
-                                    { id, name, brand, color, price, year },
+                                    { id, name, brand, color, price, year, },
                                     index
                                 ) => (
                                     <tr key={id}>

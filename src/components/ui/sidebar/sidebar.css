@@ -7,9 +7,6 @@
     flex-direction: column;
     padding: 20px;
 }
-.sidebar .hide {
-    left: 0;
-}
 .navLink {
     border: 1.5px solid orange;
     margin: 10px 0;

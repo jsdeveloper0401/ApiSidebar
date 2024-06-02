@@ -17,7 +17,7 @@ const Sidebar = () => {
                 to="/main"
                 className={
                     "navLink " +
-                    (location.pathname === "/main/cars" ? "active" : "")
+                    (location.pathname === "/main/cars" ? "bg-warning text-bold" : "")
                 }>
                 Cars
             </NavLink>

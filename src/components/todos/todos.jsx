@@ -151,13 +151,13 @@ const Users = () => {
                             <td>
                                 {editingId === item.id ? (
                                     <button
-                                        className="btn btn-success m-1"
+                                        className="btn btn-success mx-1"
                                         onClick={() => saveEdit(item.id)}>
                                         Save
                                     </button>
                                 ) : (
                                     <button
-                                        className="btn btn-info m-1"
+                                        className="btn btn-info mx-1"
                                         onClick={() =>
                                             startEditing(item.id, item.title)
                                         }>
@@ -165,7 +165,7 @@ const Users = () => {
                                     </button>
                                 )}
                                 <button
-                                    className="btn btn-danger m-1"
+                                    className="btn btn-danger mx-1"
                                     onClick={() => deleteTodo(item.id)}>
                                     Delete
                                 </button>

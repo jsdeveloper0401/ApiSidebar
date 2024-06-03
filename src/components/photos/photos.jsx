@@ -1,20 +1,34 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Rolling from "@img/rolling.svg";
 import "./photos.css";
 
 const Photos = () => {
-    const [photo, setPhoto] = useState([]);
+    const [photos, setPhotos] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         axios
             .get("https://jsonplaceholder.typicode.com/photos?_limit=12")
             .then((response) => {
-                console.log(response.data[0]);
-                setPhoto(response.data);
+                setPhotos(response.data);
+                setLoading(false);
+            })
+            .catch((err) => {
+                console.log(err);
+                setLoading(false);
             });
     }, []);
 
-    let cards = photo?.map((el) => (
+    if (loading) {
+        return (
+            <h3 style={{ textAlign: "center", marginTop: "20px" }}>
+                <img src={Rolling} alt="Loading..." />
+            </h3>
+        );
+    }
+
+    let cards = photos?.map((el) => (
         <div key={el.id} className="col-md-4 mb-4">
             <div className="foto card h-100">
                 <img

@@ -1,5 +1,5 @@
 import React from "react";
-import BlueCar from "../../assets/img/blue-car.png";
+import BlueCar from "@img/blue-car.png";
 
 const Index = () => {
     return (

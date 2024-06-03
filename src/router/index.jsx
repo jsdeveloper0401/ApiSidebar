@@ -5,14 +5,15 @@ import {
     Route,
     RouterProvider,
 } from "react-router-dom";
-import App from "../App";
-import Login from "../components/login/login";
-import Cars from "../components/cars/cars";
-import Main from "../components/main/main";
-import Users from "../components/users/users";
-import Todos from "../components/todos/todos";
-import Photos from "../components/photos/photos";
-import SingleCar from "../components/single-car/single-car";
+import App from "@/App";
+import Login from "@components/login/login";
+import Cars from "@components/cars/cars";
+import Main from "@components/main/main";
+import Users from "@components/users/users";
+import Todos from "@components/todos/todos";
+import Photos from "@components/photos/photos";
+import SingleCar from "@components/single-car/single-car";
+
 const Index = () => {
     const router = createBrowserRouter(
         createRoutesFromElements(

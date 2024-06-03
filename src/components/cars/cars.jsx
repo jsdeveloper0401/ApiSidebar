@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { nanoid } from "nanoid";
-import UserModal from "../../components/modal";
+import UserModal from "../modal";
 import { NavLink } from "react-router-dom";
 import "./cars.css";
 
